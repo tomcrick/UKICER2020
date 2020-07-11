@@ -224,14 +224,18 @@ and less fortunate~\cite{vonbraun-et-al:2020,lancetcovid:2020}; worse
 now, it appears that the virus must be tolerated on an indefinite
 basis~\cite{kissler-et-al:2020}. The impact of the pandemic on the
 wider education system, across all settings, has been
-profound~\cite{oecdcovidedu:2020,armitage+nellums:2020}
+profound~\cite{unescocovidedu:2020,armitage+nellums:2020}, across
+pedagogy and practice~\cite{means:2014,doucet-et-al:2020}.
 
 Building on our recent work looking at the impact of COVID-19 on the higher
 education sector~\cite{watermeyer-et-al:he2020}...
 
+% cite EEF report, stuff from Soc Psych paper, BA grant, maybe link to
+% HoC inquiry, etc
+
 Also linking back to recent work on CS/STEM curriculum reform, digital
 skills, accreditation,
-etc~\cite{brown-et-al-toce2014,tryfonas+crick:petra2018,crick-et-al:fie2019,davenport-et-al:educon2020,prickett-et-al:iticse2020}
+etc~\cite{brown-et-al-toce2014,davenport-et-al:latice2016,murphy-et-al:programming2017,tryfonas+crick:petra2018,crick-et-al:fie2019,davenport-et-al:educon2020,prickett-et-al:iticse2020}
 
 
 \begin{itemize}
@@ -364,35 +368,63 @@ schools were significantly more likely to agree with the statements
 than those in HE and FE.
 
 \begin{landscape}
- % \footnotesize
 \begin{table}[]
 \resizebox{\textwidth}{!}{%
-  \begin{tabular}{llllllllllllllllllllllllll}
-    \toprule
-Variable & Category & \multicolumn{4}{l}{I feel prepared to deliver online LT\&A} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I feel confident in my ability to\\facilitate online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}My institution has been supportive in\\facilitating the move to online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I have a good working knowledge of \\ the technologies that are available to \\ support online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I can access appropriate technologies\\to support my online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I am confident that all of my students\\will be able to access the teaching and\\assessment that I make available online\end{tabular}}  \\
-\midrule
-&  & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio\\
+\begin{tabular}{@{}llllllllllllllllllll@{}}
+\toprule
+  Variable & Category & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I feel prepared to\\ deliver online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I feel confident in my \\ ability to facilitate\\ online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}My institution has been\\ supportive in facilitating\\ the move to online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I have a good working\\ knowledge of the technologies\\ that are available to \\ support online LT\&A\end{tabular}} &  &  \\ \midrule
+ &  & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE \\
 \multirow{2}{*}{CS} & Non CS (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 \\\addlinespace
+ & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 \\
 \multirow{2}{*}{Gender} & Male (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 \\\addlinespace
+ & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 \\
 \multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}Years\\ working\end{tabular}} & 0-5 (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
  & 6-10 & -0.12 & 0.19 & 0.53 & 0.89 & -0.29 & 0.20 & 0.15 & 0.75 & 0.12 & 0.24 & 0.61 & 1.13 & -0.01 & 0.20 & 0.98 & 1.00 & 0.22 & 0.26 \\
  & 11-15 & -0.0 & 0.18 & 0.99 & 0.99 & 0.02 & 0.2 & 0.89 & 1.03 & 0.51 & 0.22 & 0.02 & 1.66 & 0.08 & 0.20 & 0.68 & 1.08 & 0.29 & 0.25 \\
  & 16-20 & 0.06 & 0.19 & 0.76 & 1.06 & 0.00 & 0.2 & 0.99 & 1.00 & 0.47 & 0.23 & 0.45 & 1.60 & 0.24 & 0.21 & 0.26 & 1.27 & 0.31 & 0.26 \\
  & 21-25 & 0.25 & 0.19 & 0.18 & 1.29 & 0.20 & 0.20 & 0.31 & 1.22 & 0.32 & 0.25 & 0.19 & 1.38 & 0.47 & 0.21 & 0.02 & 1.60 & 0.73 & 0.25 \\
- & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 \\\addlinespace
+ & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 \\
 \multirow{3}{*}{Setting} & School (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
  & FE & 0.67 & 1.78 & \textless{}0.001 & 1.96 & 0.76 & 0.19 & \textless{}0.001 & 2.14 & 0.61 & 0.24 & 0.01 & 1.84 & 0.85 & 0.20 & \textless{}0.001 & 2.35 & 0.70 & 0.24 \\
- & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 \\\addlinespace
-\multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27\\
-\bottomrule
-  \end{tabular}%
+ & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 \\
+\multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27 \\ \bottomrule
+\end{tabular}%
 }
 \caption{Binary regressions on each statement}
 \label{tab:binregs}
 \end{table}
 \end{landscape}
+
+% \begin{landscape}
+%  % \footnotesize
+% \begin{table}[]
+% \resizebox{1.2\textwidth}{!}{%
+%   \begin{tabular}{llllllllllllllllllllllllll}
+%     \toprule
+% Variable & Category & \multicolumn{4}{l}{I feel prepared to deliver online LT\&A} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I feel confident in my ability to\\facilitate online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}My institution has been supportive in\\facilitating the move to online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I have a good working knowledge of \\ the technologies that are available to \\ support online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I can access appropriate technologies\\to support my online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I am confident that all of my students\\will be able to access the teaching and\\assessment that I make available online\end{tabular}}  \\
+% \midrule
+% &  & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio\\
+% \multirow{2}{*}{CS} & Non CS (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%  & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 \\\addlinespace
+% \multirow{2}{*}{Gender} & Male (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%  & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 \\\addlinespace
+% \multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}Years\\ working\end{tabular}} & 0-5 (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%  & 6-10 & -0.12 & 0.19 & 0.53 & 0.89 & -0.29 & 0.20 & 0.15 & 0.75 & 0.12 & 0.24 & 0.61 & 1.13 & -0.01 & 0.20 & 0.98 & 1.00 & 0.22 & 0.26 \\
+%  & 11-15 & -0.0 & 0.18 & 0.99 & 0.99 & 0.02 & 0.2 & 0.89 & 1.03 & 0.51 & 0.22 & 0.02 & 1.66 & 0.08 & 0.20 & 0.68 & 1.08 & 0.29 & 0.25 \\
+%  & 16-20 & 0.06 & 0.19 & 0.76 & 1.06 & 0.00 & 0.2 & 0.99 & 1.00 & 0.47 & 0.23 & 0.45 & 1.60 & 0.24 & 0.21 & 0.26 & 1.27 & 0.31 & 0.26 \\
+%  & 21-25 & 0.25 & 0.19 & 0.18 & 1.29 & 0.20 & 0.20 & 0.31 & 1.22 & 0.32 & 0.25 & 0.19 & 1.38 & 0.47 & 0.21 & 0.02 & 1.60 & 0.73 & 0.25 \\
+%  & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 \\\addlinespace
+% \multirow{3}{*}{Setting} & School (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
+%  & FE & 0.67 & 1.78 & \textless{}0.001 & 1.96 & 0.76 & 0.19 & \textless{}0.001 & 2.14 & 0.61 & 0.24 & 0.01 & 1.84 & 0.85 & 0.20 & \textless{}0.001 & 2.35 & 0.70 & 0.24 \\
+%  & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 \\\addlinespace
+% \multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27\\
+% \bottomrule
+%   \end{tabular}%
+% }
+% \caption{Binary regressions on each statement}
+% \label{tab:binregs}
+% \end{table}
+% \end{landscape}
 
 \subsection{Qualitative Data}\label{qualdata}
 
