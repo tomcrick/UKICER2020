@@ -23,10 +23,15 @@
 %%
 %% The first command in your LaTeX source must be the \documentclass command.
 \documentclass[sigconf]{acmart}
+\usepackage[british]{babel}
+%\usepackage[noadjust]{cite}
+\usepackage{url}
+\usepackage[hyphenbreaks]{breakurl}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{lscape}
 \usepackage{graphicx}
+\def\UrlBreaks{\do\/\do-}
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
@@ -124,8 +129,6 @@
 }
   \email{j.s.goodall@swansea.ac.uk}
 
-
-%%
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
 %% other information printed in the page headers. This command allows
@@ -221,84 +224,157 @@ incalculable; it has affected, and continues to affect, profound
 social suffering, significant cultural disruption, and deep economic
 hardship. While indiscriminate in terms of whom it infects, it has
 largely punished society’s most vulnerable and less
-fortunate~\cite{vonbraun-et-al:2020,lancetcovid:2020}; worse now, it
-appears that the virus may have to be tolerated on an indefinite
-basis~\cite{kissler-et-al:2020}. The impact of the pandemic on the
-wider education system, across all settings, has been
-profound~\cite{unescocovidedu:2020,armitage+nellums:2020}, across
-pedagogy and practice~\cite{means:2014,doucet-et-al:2020}.
+fortunate~\cite{vonbraun-et-al:2020,lancetcovid:2020,vanlancker+parolin:2020};
+worse now, it appears that the virus may have to be tolerated on an
+indefinite basis~\cite{kissler-et-al:2020}.
 
-Building on our recent work looking at the impact of COVID-19 on the higher
-education sector~\cite{watermeyer-et-al:he2020}...
+The impact of the pandemic on the wider education system, across all
+settings, has been
+profound~\cite{unescocovidedu:2020,armitage+nellums:2020}, presenting
+significant challenges for learning, teaching and assessment (LT\&A),
+especially from a pedagogic
+perspective~\cite{doucet-et-al:2020,oecd:2020,aace:2020}. In the
+United Kingdom (UK), there have been major responses from governments,
+organisations and institutions at all levels and settings; from
+national policy~\cite{dfecovid:2020,wgcontinuity:2020}, maintaining
+quality and standards~\cite{qaaqands:2020}, to ongoing inquiries on
+the impact of COVID-19 on education and children’s
+services~\cite{hocedu:2020,seneddcype:2020}.
 
-% cite EEF report, stuff from Soc Psych paper, BA grant, maybe link to
-% HoC inquiry, etc
+The general impact and efficacy of digital learning and educational
+technology is still uncertain in the formal academic literature, being
+dependent on specific educational settings and LT\&A context. Whilst a
+range of international research studies have shown benefits of the
+successful application of digital LT\&A across a variety of contexts
+and settings, the widespread adoption, implementation and evaluation
+of educational technologies has yet to be fully
+realised~\cite{decodinglearning:2012,means:2014,ecjrc:2017,mayer:2018}.
+The research and policy debate regarding the efficacy, utility and
+impact of educational technology and digital practice is ongoing,
+reinforced by a new national strategy for schools in
+England~\cite{dfe:2019}, as well as recent work from Jisc (a
+not-for-profit organisation that provides digital solutions for UK
+education and research) on digital practice in FE and
+HE~\cite{lanclos+phipps:2019}, and from the QAA on developing a
+taxonomy for digital learning~\cite{qaadigtaxonomy:2020}. We have also
+seen updated guidance on how digital learning can improve learning, as
+well as a rapid evidence assessment on remote learning from the
+Education Endowment
+Foundation~\cite{eefdigtech:2019,eefremote:2020}.
 
+% examples: http://www.cs.ox.ac.uk/innovation/covid-19/
+It is clear that the academic discipline of computer science -- and
+indeed the wider information technology sector~\cite{bcs:2020} -- has
+much to offer to address the wider challenges resulting from the
+COVID-19 pandemic; from computational modelling, the use of AI,
+machine learning and big data, as well as the wider legal, social,
+ethical and professional issues, such as from contact tracing,
+personal data sharing/storage, and the use of image recognition and
+surveillance~\cite{ting-et-al:2020,cerf:2020,chun-et-al:2020,bbcnews:2020}. There
+has also been recent analysis on the impact of COVID-19 on the
+computer science research community -- as we have seen across
+international scientific research communities more
+broadly~\cite{oecdcovid19:2020} -- especially on ongoing projects,
+careers, and dissemination of work~\cite{msrcovid19:2020}. However,
+there has been little focus on what this means for computer science
+education and practitioners, especially thinking about the range of
+specific disciplinary challenges for LT\&A, across all settings and
+levels. This directly links to recent significant changes to computer
+science curricula, qualifications and practice across the
+UK~\cite{brown-et-al-toce2014,davenport-et-al:latice2016,
+murphy-et-al:programming2017, prickett-et-al:iticse2020}, as well as
+the emerging focus on the required digital skills and infrastructure
+to support the UK's post-COVID economic
+renewal~\cite{tryfonas+crick:petra2018,crick-et-al:fie2019,davenport-et-al:educon2020}.
+% Also linking back to recent work on CS/STEM curriculum reform, digital
+% skills, accreditation, etc
+% CS specific context: shifts in the discipline, school curriculum
+% reform, wider digital economy, high-value digital skills across the UK
 % https://teachcomputing.org/
-Also linking back to recent work on CS/STEM curriculum reform, digital
-skills, accreditation,
-etc~\cite{brown-et-al-toce2014,davenport-et-al:latice2016,murphy-et-al:programming2017,tryfonas+crick:petra2018,crick-et-al:fie2019,davenport-et-al:educon2020,prickett-et-al:iticse2020}
 
-Quality assurance, evidence base~\cite{eefdigtech:2019, eefremote:2020,qaaqands:2020,qaadigtaxonomy:2020}
+% Data collected in the Immediate aftermath of the lockdown and
+% shift to online, recognising this is a limitation, but this links to
+% planning and preparation for next academic, supporting emerging policy
+% and practice. i.e. what we can learn from this, how might the
+% sector/discipline change as a result?
+% Impact on practitioners, institutions and their respective
+% sectors, with derived/implied impact on learners and students.
 
-% https://www.bcs.org/policy-and-influence/vital-workers-keeping-us-connected/
-% https://www.bbc.co.uk/news/technology-53114251
-% http://www.cs.ox.ac.uk/innovation/covid-19/
-Not only has the academic discipline of computer science much to offer
-to address the challenges resulting from the COVID-19 pandemic
+% Research question: “How do computer scientists in the field of
+% education perceive the rapid shift to ERT?”
+We thus undertook a survey of UK computer scientists on their
+perspectives as practitioners on the rapid shift to ``emergency remote
+teaching'' and transitioning online at the height of the COVID-19
+crisis, and what they identify and forecast as its immediate and
+prospective impacts. The data was collected in the immediate aftermath
+of the forced institutional lockdowns and shift to online LT\&A,
+providing insight into emerging policy and practice; impact on
+practitioners, institutions and thus learners; how might this change
+the discipline as a result; and what might this mean for the coming
+academic year and the longer-term.  The discussion that follows is
+based upon the perspectives of n=214 practitioners (as part of a
+larger survey of the UK educational workforce (N=2,197), including
+specific work on the UK higher education
+sector~\cite{watermeyer-et-al:he2020}) in the UK drawn from across all
+educational settings, institutions, and career hierarchy, and what
+they recognise to be the major consequences of COVID-19, the
+transition to online LT\&A and the challenges of maintaining
+``continuity of learning''. Their accounts document the hopes and
+fears of the UK computer science education community in the face of
+seismic and, as may prove to be, inalterable shifts. The majority of
+respondents tend towards a significantly more positive view of online
+migration than those working in other disciplines, recognising the
+opportunities and potential affordances of the crisis; these
+perceptions were consistent across all educational settings. There
+were some, albeit a minority, who raised a number of generalisable
+concerns on the impact of this shift to online and the challenges
+relating to their roles, their institutions and their sectors as a
+whole.
 
-% BCS: https://www.bcs.org/content-hub/computing-teachers-save-the-day-during-covid-lockdown/
-% CACM: 10.1145/3397262; also computational modelling, AI/ML, contact
-% tracing, data ethics
+%\subsection*{A Note on Nomenclature}
 
-\begin{itemize}
-\item Look at HE paper for some intro context
-\item CS specific context: shifts in the discipline, school curriculum
-reform, wider digital economy, high-value digital skills across the UK
-\item Mention “UK”/devolved nations context but say this is aggregated
-– link back to research question
-\item Research question: “How do computer scientists in the field of
-education perceive the rapid shift to ERT?”
-\item Data collected in the Immediate aftermath of the lockdown and
-shift to online, recognising this is a limitation, but this links to
-planning and preparation for next academic, supporting emerging policy
-and practice. i.e. what we can learn from this, how might the
-sector/discipline change as a result?
-\item Impact on practitioners, institutions and their respective
-sectors, with derived/implied impact on learners and students.
-\item Define LTA
-\end{itemize}
+While in many instances throughout this paper we will refer to the UK
+-- consisting of the four nations of England, Scotland, Wales and
+Northern Ireland -- we will attempt to be as clear as possible when
+referring to specific policies or initiatives across or between the
+nations, as a number of policy areas, including education and skills,
+are devolved to the respective national governments. However, for the
+purposes of this study, we will be looking at aggregated UK-level
+impacts and perceptions of computer science practitioners.
 
 \section{Methods}\label{methods}
 
 \subsection{Sample}
 
-The survey aimed to investigate how the education workforce has viewed
-the move to online LTA. The target population was those who are
-actively involved in the delivery of LTA within the education
-sector. Those who did not meet this criterion were excluded from
-analysis post-hoc.
+The survey aimed to investigate how the UK computer science education
+workforce has viewed the move to online LT\&A. The target population was
+those who are actively involved in the delivery of LT\&A within the
+education sector. Those who did not meet this criterion were excluded
+from analysis post-hoc.
 
-We adopted a convenience sampling approach in distributing the survey
-whereby a link to the survey was advertised via professional networks
-and related education organisations in addition to various social
-media channels. After excluding those that did not meet the
-participant requirements 2,197 members of the UK education workforce
-responded to the survey. This included 1,148 respondents from the HE
-(university) sector (52.3\%), 279 respondents from FE (12.7\%) and 569
-respondents from schools (25.9\%). 214 participants indicated that
-they taught computer sciences. This included 119 from the HE sector
-(55.6\%), 24 from FE (11.2\%) and 71 from schools (33.2\%).
+We adopted a convenience sampling approach in distributing the
+Qualtrics survey whereby a link to the survey was advertised via
+professional networks and related education organisations, in addition
+to various social media channels. After excluding those that did not
+meet the participant requirements 2,197 members of the UK education
+workforce responded to the survey. This included 1,148 respondents
+from the HE (university) sector (52.3\%), 279 respondents from FE
+(12.7\%) and 569 respondents from schools (25.9\%). 214 participants
+indicated that they taught computer sciences. This included 119 from
+the HE sector (55.6\%), 24 from FE (11.2\%) and 71 from schools
+(33.2\%).
 
-The survey was launched on 26 March 2020 and remained open for four
-weeks. Due to the distribution method we cannot calculate the response
-rate; however, of those who started the survey, 84.9\% completed it.
+The survey was launched on 26 March 2020 following the announcement of
+closures across all educational settings in all four nations of the
+UK, and remained open for four weeks. Due to the distribution method
+we cannot calculate the response rate; however, of those who started
+the survey, 84.9\% completed it.
 
 \subsection{Questionnaire}
 
 On the first page of the questionnaire respondents were informed that
 the research was designed to identify their views and experiences of
-the move to online LTA in response to COVID-19. The first section of
+the move to online LT\&A in response to COVID-19. The first section of
 the questionnaire consisted of demographic questions in order to
 determine how participant characteristics impacted key variables. In
 order to identify those who are computer scientists, those who
@@ -323,7 +399,7 @@ upon}}'' followed by ``{\emph{your role}}'', ``{\emph{your
 institution}}'' and ``{\emph{your sector of education}}''.
 
 The survey was piloted on a subsample of the population before
-distribution to the wider education workforce.
+distribution to the wider UK computer science workforce.
 
 \subsection{Analysis}
 
@@ -385,65 +461,34 @@ than those in HE and FE.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}llllllllllllllllllllllllll@{}}
 \toprule
-  Variable & Category & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}I feel prepared to\\ deliver online LT\&A\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}I feel confident in my \\ ability to facilitate\\ online LT\&A\end{tabular}}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}My institution has been\\ supportive in facilitating\\ the move to online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I have a good working\\ knowledge of the technologies\\ that are available to support\\ online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I can access appropriate\\technologies to support\\my online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I am confident that all of my\\ students will be able to access\\ the teaching and assessment\\that I make available online\end{tabular}} \\ \midrule
+  Variable & Category & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``I feel prepared to deliver\\ online LT\&A''\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``I feel confident in my ability\\ to facilitate online LT\&A''\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``My institution has been\\ supportive in facilitating\\ the move to online LT\&A''\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``I have a good working\\ knowledge of the technologies\\ that are available to support\\ online LT\&A''\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``I can access appropriate\\technologies to support my\\ online LT\&A''\end{tabular}}} & \multicolumn{4}{l}{\textit{\begin{tabular}[c]{@{}l@{}}``I am confident that all of my\\ students will be able to access\\ the teaching and assessment\\that I make available online''\end{tabular}}} \\ \midrule
 
   &  & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} & $\beta$ & SE & p & \begin{tabular}[c]{@{}l@{}}Odds\\ Ratio\end{tabular} \\ \addlinespace
 
  \multirow{2}{*}{CS} & Non CS (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 \\ \addlinespace
+ & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 & 0.003 & 0.39 & -0.59 & 0.18 & \textless{}0.001 & 0.55\\ \addlinespace
 
   \multirow{2}{*}{Gender} & Male (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 \\ \addlinespace
+ & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 & 0.136 & 1.26 & 0.37 & 0.12 & 0.002 & 1.45 \\ \addlinespace
 
   \multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}Years\\ working\end{tabular}} & 0-5 (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & 6-10 & -0.12 & 0.19 & 0.53 & 0.89 & -0.29 & 0.20 & 0.15 & 0.75 & 0.12 & 0.24 & 0.61 & 1.13 & -0.01 & 0.20 & 0.98 & 1.00 & 0.22 & 0.26 \\
- & 11-15 & -0.0 & 0.18 & 0.99 & 0.99 & 0.02 & 0.2 & 0.89 & 1.03 & 0.51 & 0.22 & 0.02 & 1.66 & 0.08 & 0.20 & 0.68 & 1.08 & 0.29 & 0.25 \\
- & 16-20 & 0.06 & 0.19 & 0.76 & 1.06 & 0.00 & 0.2 & 0.99 & 1.00 & 0.47 & 0.23 & 0.45 & 1.60 & 0.24 & 0.21 & 0.26 & 1.27 & 0.31 & 0.26 \\
- & 21-25 & 0.25 & 0.19 & 0.18 & 1.29 & 0.20 & 0.20 & 0.31 & 1.22 & 0.32 & 0.25 & 0.19 & 1.38 & 0.47 & 0.21 & 0.02 & 1.60 & 0.73 & 0.25 \\
- & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 \\ \addlinespace
+ & 6-10 & -0.12 & 0.19 & 0.53 & 0.89 & -0.29 & 0.20 & 0.15 & 0.75 & 0.12 & 0.24 & 0.61 & 1.13 & -0.01 & 0.20 & 0.98 & 1.00 & 0.22 & 0.26 & 0.4 & 1.24 & 0.01 & 0.20 & 0.981 & 1.01\\
+ & 11-15 & -0.0 & 0.18 & 0.99 & 0.99 & 0.02 & 0.2 & 0.89 & 1.03 & 0.51 & 0.22 & 0.02 & 1.66 & 0.08 & 0.20 & 0.68 & 1.08 & 0.29 & 0.25 & 0.25 & 1.33 & 0.06 & 0.19 & 0.759 & 1.06\\
+ & 16-20 & 0.06 & 0.19 & 0.76 & 1.06 & 0.00 & 0.2 & 0.99 & 1.00 & 0.47 & 0.23 & 0.45 & 1.60 & 0.24 & 0.21 & 0.26 & 1.27 & 0.31 & 0.26 & 0.24 & 1.36 & 0.04 & 0.20 & 0.829 & 1.04\\
+ & 21-25 & 0.25 & 0.19 & 0.18 & 1.29 & 0.20 & 0.20 & 0.31 & 1.22 & 0.32 & 0.25 & 0.19 & 1.38 & 0.47 & 0.21 & 0.02 & 1.60 & 0.73 & 0.25 & 0.01 & 2.08 & -0.03 & 0.20 & 0.865 & 0.97\\
+ & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 & 0.50 & 1.22 & 0.00 & 0.20 & 0.997 & 1.00\\ \addlinespace
 
   \multirow{3}{*}{Setting} & School (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
- & FE & 0.67 & 1.78 & \textless{}0.001 & 1.96 & 0.76 & 0.19 & \textless{}0.001 & 2.14 & 0.61 & 0.24 & 0.01 & 1.84 & 0.85 & 0.20 & \textless{}0.001 & 2.35 & 0.70 & 0.24 \\
- & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 \\ \addlinespace
+ & FE & 0.67 & 1.78 & \textless{}0.001 & 1.96 & 0.76 & 0.19 & \textless{}0.001 & 2.14 & 0.61 & 0.24 & 0.01 & 1.84 & 0.85 & 0.20 & \textless{}0.001 & 2.35 & 0.70 & 0.24 & 0.004 & 2.01 & -0.23 & 0.19 & 0.235 & 0.80\\
+ & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 & \textless{}0.001 & 2.18 & -0.56 & 0.14 & \textless{}0.001 & 0.57\\ \addlinespace
 
-  \multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27 \\ \bottomrule
+  \multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27 & \textless{}0.001 & 0.07 & 0.82 & 0.19 & \textless{}0.001 & 2.26\\ \bottomrule
 \end{tabular}%
 }
 \caption{Binary regressions on key survey statements}
 \label{tab:binregs}
 \end{table*}
 %\end{landscape}
-
-% \begin{landscape}
-%  % \footnotesize
-% \begin{table}[]
-% \resizebox{1.2\textwidth}{!}{%
-%   \begin{tabular}{llllllllllllllllllllllllll}
-%     \toprule
-% Variable & Category & \multicolumn{4}{l}{I feel prepared to deliver online LT\&A} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I feel confident in my ability to\\facilitate online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}My institution has been supportive in\\facilitating the move to online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I have a good working knowledge of \\ the technologies that are available to \\ support online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I can access appropriate technologies\\to support my online LT\&A\end{tabular}} & \multicolumn{4}{l}{\begin{tabular}[c]{@{}l@{}}I am confident that all of my students\\will be able to access the teaching and\\assessment that I make available online\end{tabular}}  \\
-% \midrule
-% &  & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio & $\beta$ & SE & p & Odds Ratio\\
-% \multirow{2}{*}{CS} & Non CS (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-%  & CS & -0.77 & 0.19 & \textless{}0.001 & 0.46 & -0.92 & 0.22 & \textless{}0.001 & 0.4 & -0.7 & 0.14 & 0.04 & 0.61 & -1.59 & 0.27 & \textless{}0.001 & 0.20 & -0.94 & 0.32 \\\addlinespace
-% \multirow{2}{*}{Gender} & Male (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-%  & Female & 0.32 & 0.11 & 0.005 & 1.37 & 0.35 & 0.12 & 0.005 & 1.42 & -0.07 & 0.14 & 0.6 & 0.93 & 0.40 & 0.13 & 0.002 & 1.50 & 0.23 & 0.16 \\\addlinespace
-% \multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}Years\\ working\end{tabular}} & 0-5 (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-%  & 6-10 & -0.12 & 0.19 & 0.53 & 0.89 & -0.29 & 0.20 & 0.15 & 0.75 & 0.12 & 0.24 & 0.61 & 1.13 & -0.01 & 0.20 & 0.98 & 1.00 & 0.22 & 0.26 \\
-%  & 11-15 & -0.0 & 0.18 & 0.99 & 0.99 & 0.02 & 0.2 & 0.89 & 1.03 & 0.51 & 0.22 & 0.02 & 1.66 & 0.08 & 0.20 & 0.68 & 1.08 & 0.29 & 0.25 \\
-%  & 16-20 & 0.06 & 0.19 & 0.76 & 1.06 & 0.00 & 0.2 & 0.99 & 1.00 & 0.47 & 0.23 & 0.45 & 1.60 & 0.24 & 0.21 & 0.26 & 1.27 & 0.31 & 0.26 \\
-%  & 21-25 & 0.25 & 0.19 & 0.18 & 1.29 & 0.20 & 0.20 & 0.31 & 1.22 & 0.32 & 0.25 & 0.19 & 1.38 & 0.47 & 0.21 & 0.02 & 1.60 & 0.73 & 0.25 \\
-%  & 26+ & 0.39 & 0.19 & 0.04 & 1.48 & 0.36 & 0.20 & 0.08 & 1.43 & 0.31 & 0.24 & 0.19 & 1.37 & 0.65 & 0.22 & 0.003 & 1.91 & 0.20 & 0.28 \\\addlinespace
-% \multirow{3}{*}{Setting} & School (ref) &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-%  & FE & 0.67 & 1.78 & \textless{}0.001 & 1.96 & 0.76 & 0.19 & \textless{}0.001 & 2.14 & 0.61 & 0.24 & 0.01 & 1.84 & 0.85 & 0.20 & \textless{}0.001 & 2.35 & 0.70 & 0.24 \\
-%  & HE & 1.08 & 0.11 & \textless{}0.001 & 2.94 & 0.94 & 0.14 & \textless{}0.001 & 2.55 & 1.07 & 0.24 & \textless{}0.001 & 2.92 & 1.14 & 0.15 & \textless{}0.01 & 3.11 & 0.78 & 0.19 \\\addlinespace
-% \multicolumn{2}{l}{Constant} & -1.29 & 0.19 & \textless{}0.001 & 0.28 & -1.55 & 0.20 & \textless{}0.001 & 0.21 & -2.29 & 0.25 & \textless{}0.001 & 0.10 & -1.86 & 0.22 & \textless{}0.001 & 0.16 & -2.65 & 0.27\\
-% \bottomrule
-%   \end{tabular}%
-% }
-% \caption{Binary regressions on each statement}
-% \label{tab:binregs}
-% \end{table}
-% \end{landscape}
 
 \subsection{Qualitative Data}\label{qualdata}
 
@@ -463,9 +508,13 @@ discussed in relation to computer sciences education.
 \subsubsection{Change as progressive}
 
 \begin{quotation}
-``{\emph{If used and set up well, it could be amazing.  Breaking down
-barriers to EdTech and embracing technology for a connected student
-experience}}'' [school]
+``{\emph{Computer science education is probably a good place to be
+right now.}}'' [HE]
+\end{quotation}
+
+\begin{quotation}
+``{\emph{We are in a pretty unique place because of what we
+teach. }}'' [school]
 \end{quotation}
 
 Computer scientists mentioned a number of progressive and beneficial
@@ -484,6 +533,12 @@ foresaw long-term benefits for computer sciences as a discipline
 within education ``{\emph{ICT has gone up massively as a valued skill
 -- hopefully a trend that will be reflected and its impact will be
 increased in terms of curriculum timetabling}}'' [school].
+
+\begin{quotation}
+``{\emph{If used and set up well, it could be amazing.  Breaking down
+barriers to edtech and embracing technology for a connected student
+experience}}'' [school]
+\end{quotation}
 
 Further opportunities were noted in the advance in educational digital
 infrastructure. A key theme was the acknowledgement of the
@@ -505,6 +560,9 @@ due to significant support made available to them to support this}}''
 [school]
 \end{quotation}
 
+% COVID-19 has been a lightning rod that has catalysed a lot of much
+% needed changes in my institution. [HE]
+
 There was also discussion about the positive impact this could have on
 pedagogy and practice as it has ``{\emph{opened opportunities for
     flexible learning}}” [school]. Furthermore, respondents mentioned that
@@ -523,7 +581,14 @@ when it comes to operating online}}'' [HE].
 \begin{quotation}
 ``{\emph{I am concerned that my institution thinks a move online is a
 move to more innovative and modern teaching, just by virtue of it
-being online}}'' [HE]
+being online.}}'' [HE]
+\end{quotation}
+
+\begin{quotation}
+``{\emph{HE will move increasingly to online provision, sadly. Our technologies
+do not currently allow the creation and manipulation of shared mental
+representations which is necessary for effective teaching and learning
+of mathematics and computer science.}}'' [HE]
 \end{quotation}
 
 While acknowledgement of opportunities was clear within the
@@ -559,19 +624,37 @@ student’s specialism within computer science their experience could be
 more significantly affected. For example, those studying networking or
 robotics}}'' [HE].
 
-Furthermore, while respondents acknowledged the lack of necessary
-physical resource as a problem for their students, many acknowledged
-the lack of their own time as a key concern: ``{\emph{the main problem
-is not availability of resource and support, but the time needed to
-acquire skills in using them, for which there is no space in my
-current role}}'' [HE]. The impact of moving resources online on
-workload was a concern raised across the discipline: ``{\emph{huge
-uncertainty, possibly spending all summer converting a large course to
-online without knowing whether/if students will even enrol}}''
-[HE]. This concern about the fragility of the sector was particularly
-prominent in respondents from HE.
+Also, while respondents acknowledged the lack of necessary physical
+resource as a problem for their students, many acknowledged the lack
+of their own time as a key concern: ``{\emph{the main problem is not
+availability of resource and support, but the time needed to acquire
+skills in using them, for which there is no space in my current
+role}}'' [HE]. The impact of moving resources online on workload was a
+concern raised across the discipline: ``{\emph{huge uncertainty,
+possibly spending all summer converting a large course to online
+without knowing whether/if students will even enrol}}'' [HE]. This
+concern about the fragility of the sector was particularly prominent
+in respondents from HE. This was reinforced by concerns across all
+sectors for the health and wellbeing of both practitioners and
+learners, linking back to previous comments regarding equity and
+personal circumstances: ``{\emph{It makes me want to get out of
+teaching computing; the amount of time that I spend at the computer
+feels tiresome at the best of times, and now that there is no
+face-to-face contact with students, the computer time is very
+demoralising}}'' [schools] and ``{\emph{My role is shifting towards
+advising and away from teaching. A major challenge will be students'
+mental health, not their ability to write Java code.}}'' [HE].
 
 \section{Discussion}\label{discussion}
+
+\begin{quotation}
+``{\emph{This is the beginning of a new era. Things will never be the
+same again.}}'' [HE]
+\end{quotation}
+
+\begin{quotation}
+``{\emph{Computer Science will boom.}}'' [HE]
+\end{quotation}
 
 \begin{itemize}
 \item Computer scientists are more prepared and confident and
@@ -580,7 +663,7 @@ supported by institution compared to all other disciplines
 of being a CS is sig predictor of preparedness when controlling for
 sector/gender/years teaching, implying CS is sig variable…
 \item However, while qual data showed some positive responses there
-were a number of concerns around impact of OLTA and their roles going
+were a number of concerns around impact of online LT\&A and their roles going
 forward
 \end{itemize}
 
@@ -595,32 +678,53 @@ LT\&A. While those in schools were significantly more likely to agree
 with these statements than those in FE and HE, being a computer
 scientist remained a significant predictor of these viewpoints when
 controlling for setting, gender, and years working in the profession.
-These results are, perhaps, unsurprising, given the proficiency of
+These results are, perhaps, unsurprising, given the likely proficiency of
 computer scientists to use technology. However, they highlight that
-this confidence with technology translates to its use for learning and
-teaching online.
+this confidence with technology translates to its use for online LT\&A.
+
+\begin{quotation}
+``{\emph{As a Computing teacher, most of my resources are already
+online. However, teaching programming techniques and complex concepts
+of computer science online is difficult.}}'' [schools]
+\end{quotation}
 
 Central to both the positive and negative commentary was the theme of
 pedagogy. While some recognised the potential that moving teaching
 online could allow practitioners to be `flexible' and `creative' with
-their pedagogy, practitioners expressed concern about how
-`skills-based' computer science can be taught effectively without
-face-to-face instruction. Therefore, while literature has demonstrated
-the use of technology to enhance teaching, a number of practitioners
-were concerned about its place in computer science education.
+their pedagogy, practitioners expressed concern about how key
+foundation topics and threshold concepts in computer science can be
+taught effectively without face-to-face instruction. Therefore, while
+literature has demonstrated the use of technology to enhance teaching,
+a number of practitioners were concerned about its place in computer
+science education, especially for key topics in computer science, such
+as programming and mathematical foundations, as well as more practical
+or collaborative topics such as robotics and group software projects.
 % Might not want to phrase it like this- but perhaps can add literature
 % in the intro which looks at effective use of tech for teaching- and
 % refer back to it here.
 
-% Add comments about top-down decision making about effective pedagogy.
+% Specifically I work in an area that involves some hands on practical
+% projects. These cannot be replicated online, so the student experience
+% will be significantly changed. [HE]
+
+\begin{quotation}
+``{\emph{HE will move increasingly to online provision, sadly.  Our
+technologies do not currently allow the creation and manipulation of
+shared mental representations which is necessary for effective
+teaching and learning of mathematics and computer science.}}'' [HE]
+\end{quotation}
+
 Yet, it could also be argued that the efficiency of online teaching
 may be overplayed by institutions. This may be particularly true of
-the HE sector who may be rapidly putting teaching online, without the
-necessary workforce training and understanding of effective online
-pedagogy.  As noted in the responses, there may be longer term
-positive impact of this technological upskilling of the education
-workforce, however, significant concerns were raised about the impact
-on workload due to these changes.
+the HE sector who may be rapidly moving teaching online, without the
+necessary workforce development and understanding of effective online
+pedagogy. As noted in the responses, there may be longer term positive
+impact of this technological upskilling of the education workforce,
+however, significant concerns were raised about the impact on workload
+due to these changes. There were also concerns raised about top-down,
+``one size fits all'' institutional approaches, rather than evaluating
+and addressing disciplinary-specific challenges and supporting
+appropriate pedagogic approaches.
 
 Another theme that was acknowledged as both a challenge and an
 opportunity was the impact on educational digital
@@ -629,27 +733,33 @@ opportunities of institutional financial investment in digital
 infrastructure, concern was raised about equity of access to these
 recourses. While it was acknowledged that computer science students
 may be the least affected by this in HE, there was concern for those
-that could not access appropriate technology at home. Specifically, a
-lack of access to labs or particular software may be an issue going
+that could not access appropriate technologies at home. Specifically,
+a lack of access to specialist labs or software may be an issue going
 forward.
 % Something here? Maybe links to curriculum reform and how curriculum
 % could be delivered without access to necessary technologies- or
 % something more about equity and those worst hit by COVID.
 
+\begin{quotation}
+``{\emph{I teach programming and robotics.  Programming transitions
+easily to online learning but Robotics does not.  It remains to be
+seen if we can continue that class.}}'' [HE]
+\end{quotation}
+
 It is also necessary to note limitations of this research and to
 highlight potential for future research in this area. Firstly, this
-research has grouped together computer science practitioners from
-varied educational settings. It could be argued that the difference in
-experience of these practitioners is vast and, consequently, it is
-difficult to recognise them as a homogenous group. However, logistic
-regression analysis demonstrated that even while controlling for
-setting, identifying as a computer scientist was a significant
-predictor of responses to the key statements. Across all participants,
-school practitioners were significantly more positive than those in HE
-and FE. Therefore, future research should investigate why this trend
-has been identified, and whether those in HE and FE can learn from
-practitioners in schools about effective methods of online LT\&A.
-% Might want to rephrase this
+study has grouped together UK computer science practitioners from
+across various educational settings. It could be argued that the
+difference in experience of these practitioners is vast and,
+consequently, it is difficult to recognise them as a homogenous
+group. However, logistic regression analysis demonstrated that even
+while controlling for setting, identifying as a computer scientist was
+a significant predictor of responses to the key statements. Across all
+participants, school practitioners were significantly more positive
+than those in HE and FE. Therefore, future research should investigate
+why this trend has been identified, and whether those in HE and FE can
+learn from practitioners in schools about effective methods of online
+LT\&A.
 
 Secondly, as this research was conducted in the immediate aftermath of
 the move to online LT\&A it could be argued that, due to the rapid
@@ -665,6 +775,10 @@ collected.
 \section{Conclusions and Looking Ahead}\label{conclusions}
 
 \begin{itemize}
+\item Many of the issues expressed in the survey are generalisable and
+common across their respective sectors; jobs, funding, sustainability
+of model, admissions, assessment, robustness of quals and examination
+system
 \item Looking ahead for the discipline
 \item Top down approach to be avoided. Need to recognise disciplinary
 uniqueness and pedagogical appropriateness.
@@ -675,8 +789,23 @@ international comparability;
 education, with knock-on effects for the discipline of computer
 science and its prominence in schools, quals, etc.
 \item Skills underpinning economic recovery
-\end{itemize}
+  \item Link to curriculum reform and quals (esp. in Wales cite);
+examples from CAS/BCS, BSA, cite Reiss paper
+  \end{itemize}
 
+  % BCS: https://www.bcs.org/content-hub/computing-teachers-save-the-day-during-covid-lockdown/
+% https://www.britishscienceassociation.org/blog/young-people-are-more-interested-in-a-scientific-career-as-a-result-of-covid-19
+% Reiss, M.J. Science Education in the Light of COVID-19. Sci \& Educ (2020). https://doi.org/10.1007/s11191-020-00143-5
+
+However, the rapid adoption of digital technologies for almost all
+activities that could previously have taken place within the physical
+space of an educational institution presents opportunities to rethink
+how many academic practices might take place in virtual
+environments. These resultant shifts in culture and identity, perhaps
+reshaping the post-pandemic digital structure of academia, also risk
+exacerbating existing inequalities in the use of digital technologies
+and opening up new areas of academic life to surveillance and
+control~\cite{carriganlseblog:2020}.
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
