@@ -32,6 +32,7 @@
 \usepackage{lscape}
 \usepackage{graphicx}
 \def\UrlBreaks{\do\/\do-}
+\newcommand\notype[1]{\unskip}
 
 %%
 %% \BibTeX command to typeset BibTeX logo in the docs
@@ -141,7 +142,7 @@ The COVID-19 pandemic has imposed ``emergency remote teaching'' across
 education globally, leading to the closure of institutions across a
 variety of settings, from early-years through to higher
 education. This paper looks specifically at the impact of these
-changes of those teaching in the discipline of computer sciences and
+changes of those teaching in the discipline of computer science and
 cognate domains. Drawing on the quantitative and qualitative findings
 from a UK survey of the educational workforce (N=2,197) conducted in
 the immediate aftermath of institutional closures in March 2020 and
@@ -226,13 +227,24 @@ settings, has been
 profound~\cite{unescocovidedu:2020,armitage+nellums:2020}, presenting
 significant challenges for learning, teaching and assessment (LT\&A),
 especially from a pedagogic
-perspective~\cite{doucet-et-al:2020,oecd:2020,aace:2020}. In the
+perspective~\cite{doucet-et-al:2020,oecd:2020,aace:2020} -- and how
+face-to-face learning is somehow perceived to be ``better value'' than
+online approaches~\cite{paechter+maier:ihe2010,scbbcnews:2020}. In the
 United Kingdom (UK), there have been major responses from governments,
-organisations and institutions at all levels and settings; from
-national policy~\cite{dfecovid:2020,wgcontinuity:2020}, maintaining
-quality and standards~\cite{qaaqands:2020}, to ongoing inquiries on
-the impact of COVID-19 on education and children’s
-services~\cite{hocedu:2020,seneddcype:2020}.
+organisations and institutions at all levels and settings; from major
+national policy initiatives to support learners and maintain quality
+and standards across all settings, to ongoing government inquiries on
+the longer-term impact of COVID-19 on education and children’s
+services.
+
+% \footnote{e.g. in Wales \url{https://business.senedd.wales/mgConsultationDisplay.aspx?ID=392}}
+% ~\cite{hocedu:2020,seneddcype:2020}.
+% ~\cite{qaaqands:2020}
+% ~\footnote{e.g. in Wales ``{\emph{Stay Safe. Stay Learning: supporting the education
+% system}}''
+% \url{https://gov.wales/stay-safe-stay-learning-supporting-education-system-html}},
+% in England: ``{\emph{Guidance for schools: coronavirus (COVID-19)}}''
+% \url{https://www.gov.uk/government/collections/guidance-for-schools-coronavirus-covid-19}
 
 \subsection{Educational Technology and Digital Learning}
 
@@ -254,24 +266,25 @@ strategy for schools in England~\cite{dfe:2019}, as well as recent
 work from Jisc (a not-for-profit organisation that provides digital
 solutions for UK education and research) on digital practice in
 further education (FE) and higher education
-(HE)~\cite{lanclos+phipps:2019}, and from the UK Quality Assurance
+(HE)~\cite{jisc:2020}, and from the UK's Quality Assurance
 Agency on a taxonomy for digital
 learning~\cite{qaadigtaxonomy:2020}. We have also seen updated
-guidance on how digital learning can improve learning, as well as a
+guidance on how digital learning can support learning, as well as a
 rapid evidence assessment on remote learning from the Education
 Endowment Foundation~\cite{eefdigtech:2019,eefremote:2020}.
 
-\subsection{Impact on Computer Science}
+\subsection{The Discipline of Computer Science}
 
 % examples: http://www.cs.ox.ac.uk/innovation/covid-19/
+% ~\cite{bcs:2020}
 It is clear that the academic discipline of computer science -- and
-indeed the wider information technology sector~\cite{bcs:2020} -- has
+indeed the wider information technology sector -- has
 much to offer to address the wider challenges resulting from the
 COVID-19 pandemic; from computational modelling, the use of AI,
 machine learning and big data, as well as the wider legal, social,
 ethical and professional issues, such as from contact tracing,
 personal data sharing/storage, and the use of image recognition and
-surveillance~\cite{ting-et-al:2020,cerf:2020,chun-et-al:2020,bbcnews:2020}. There
+surveillance~\cite{dwivedi-et-al:ijim2019,ting-et-al:2020,cerf:2020,chun-et-al:2020,rcjbbcnews:2020}. There
 has also been recent analysis on the impact of COVID-19 on the
 computer science research community -- as we have seen across
 international scientific research communities more
@@ -283,7 +296,7 @@ specific disciplinary challenges for LT\&A, across all settings and
 levels. This directly links to recent significant changes to computer
 science curricula, qualifications and practice across the
 UK~\cite{brown-et-al-toce2014,davenport-et-al:latice2016,
-murphy-et-al:programming2017, prickett-et-al:iticse2020}, as well as
+murphy-et-al:programming2017, rscsedproject:2017}, as well as
 the emerging focus on the required digital skills and infrastructure
 to support the UK's post-COVID economic
 renewal~\cite{tryfonas+crick:petra2018,crick-et-al:fie2019,davenport-et-al:educon2020}.
@@ -318,10 +331,10 @@ academic year and the longer-term.  The discussion that follows is
 based upon the perspectives of n=214 practitioners (as part of a
 larger survey of the educational workforce (N=2,197), including
 specific work on the UK higher education
-sector~\cite{watermeyer-et-al:he2020}) in the UK drawn from across all
-educational settings, institutions, and career hierarchy, and what
+sector in the UK~\cite{watermeyer-et-al:he2020}) drawn from across all
+educational settings, institutions, and the career hierarchy, and what
 they recognise to be the major consequences of COVID-19, the
-transition to online LT\&A and the challenges of maintaining
+transition to online LT\&A, and the challenges of maintaining
 ``continuity of learning''. Their accounts document the hopes and
 fears of the UK computer science education community in the face of
 seismic and, as may prove to be, inalterable shifts. The majority of
@@ -334,7 +347,7 @@ concerns on the impact of this shift to online and the challenges
 relating to their roles, their institutions and their sectors as a
 whole.
 
-\subsection{A Note on Terminology}
+\subsubsection*{A Note on Terminology}
 
 While in many instances throughout this paper we will refer to the UK
 -- consisting of the four nations of England, Scotland, Wales and
@@ -361,23 +374,23 @@ education sector. Those who did not meet this criterion were excluded
 from analysis post-hoc.
 
 We adopted a convenience sampling approach in distributing the
-Qualtrics survey whereby a link to the survey was shared via
-professional networks and related education organisations (for
-example, via the Council for Professors and Heads of Computing (CPHC)
-JISC mailing list, the ACM SIGCSE members list, the UK's University
-and College Union (UCU) mailing list, and the British Educational
-Research Association (BERA) Higher Education Special Interest Group,
-in addition to Twitter and LinkedIn). While the use of convenience
-sampling does not allow generalisation to a representative population,
-this sampling technique allowed us to document patterns within the
-observed population, with minimal time and cost restrictions.
+Qualtrics survey whereby a link to the survey was shared via mailing
+lists of professional networks and related education organisations
+(for example, via the Council for Professors and Heads of Computing
+(CPHC), BCS Academy, ACM SIGCSE, the UK's University and College Union
+(UCU), and the British Educational Research Association (BERA) Higher
+Education Special Interest Group, in addition to Twitter and
+LinkedIn). While the use of convenience sampling does not allow
+generalisation to a representative population, this sampling technique
+allowed us to document patterns within the observed population, with
+minimal time and cost restrictions.
 
 After excluding those that did not meet the participant requirements
 2,197 members of the UK education workforce responded to the
 survey. This included 1,148 respondents from the HE (university)
 sector (52.3\%), 279 respondents from FE (12.7\%) and 569 respondents
 from schools (25.9\%). 214 participants indicated that they taught
-computer sciences. This included 119 from the HE sector (55.6\%), 24
+computer science. This included 119 from the HE sector (55.6\%), 24
 from FE (11.2\%) and 71 from schools (33.2\%).
 
 The survey was launched on 26 March 2020 following the announcement of
@@ -427,7 +440,7 @@ those in computer science and those in other disciplines. Chi-square
 tests were utilised due to the categorical nature of the variables and
 to assess whether the observed cell counts are significantly different
 from the expected cell counts. As there were more participants from
-computer sciences that responded from HE institutions it was necessary
+computer science that responded from HE institutions it was necessary
 to control for the effect of setting on these outcomes. Furthermore,
 it could be hypothesised that variables such as gender and years
 working in education may have also predict the participants responses
@@ -454,7 +467,7 @@ the data and accurately represented the comments.
 \subsection{Quantitative Data}\label{quantdata}
 
 Figure~\ref{fig:partagree} shows that those who work within the
-Computer Sciences discipline were significantly more likely to say
+computer science discipline were significantly more likely to say
 that they felt prepared ($\chi^2$(1)= 22.02, p<0,001), confident
 ($\chi^2$(1)= 22.98, p<0,001), supported by their institution
 ($\chi^2$(1)= 4.5, p=0.03), held a good working knowledge of
@@ -549,7 +562,7 @@ science as a subject may have its profile raised by the mass move to
 the use of digital technology for learning. One respondent noted
 ``{\emph{it may put further emphasis on computing as a subject, with
 so much technology in use}}'' [school]. As a result, respondents
-foresaw long-term benefits for computer sciences as a discipline
+foresaw long-term benefits for computer science as a discipline
 within education ``{\emph{ICT has gone up massively as a valued skill
 -- hopefully a trend that will be reflected and its impact will be
 increased in terms of curriculum timetabling}}'' [school].
@@ -808,12 +821,18 @@ rapid shift to ``emergency remote teaching'' as identified in this
 survey could be applied more broadly across the various educational
 settings in the UK. In particular, there are significant concerns
 regarding impact on jobs, career progression, financial sustainability
-of institutions, and robustness of the qualifications and examinations
-system, issues of equity and access to technology, as well as the
-health and wellbeing of practitioners and
-students~\cite{watermeyer-et-al:he2020}. It is also important to
-acknowledge the media narrative regarding online teaching being of
-lower quality than face-to-face teaching (especially for HE); however,
+of institutions~\cite{watermeyer-et-al:he2020}, and robustness of the
+qualifications and examinations system, issues of equity and access to
+technology, as well as the health and wellbeing of practitioners and
+students\footnote{Also see: ``{\emph{Academic lives are in transition}}''
+\url{https://wonkhe.com/blogs/academic-lives-are-in-transition/} (May 2020) and
+``{\emph{Forced shift to online teaching in coronavirus pandemic
+unleashes educators’ deepest job fears}}''
+\url{https://www.natureindex.com/news-blog/forced-shift-to-online-teaching-in-coronavirus-pandemic-unleashes-educators-deepest-job-fears-}
+(April 2020)}. It
+is also important to acknowledge the media narrative regarding online
+teaching being of lower quality than face-to-face teaching (especially
+for HE)~\cite{paechter+maier:ihe2010,scbbcnews:2020}; however,
 teaching quality is more important than how lessons are
 delivered~\cite{eefremote:2020}, while technology can be used to
 improve the quality of explanations and modelling, and can play a role
@@ -823,10 +842,11 @@ The rapid adoption of digital technologies for almost all activities
 that could previously have taken place within the physical space of an
 educational institution presents opportunities to rethink how many
 academic practices might take place in virtual environments. These
-resultant shifts in culture and identity, perhaps reshaping the
-post-pandemic digital structure of education, also risk exacerbating
-existing inequalities in the use of digital technologies and opening
-up new areas of academic life to surveillance and
+resultant shifts in culture, identity, and new demands on educational
+leadership and management~\cite{slameditorial:2020}, perhaps reshaping
+the post-pandemic digital structure of education, also risk
+exacerbating existing inequalities in the use of digital technologies
+and opening up new areas of academic life to surveillance and
 control~\cite{carriganlseblog:2020}.
 
 % Looking ahead for the discipline
@@ -846,40 +866,47 @@ become more established as a school-level
 subject~\cite{crick+sentance:2011,wgictreview:2013,brown-et-al-toce2014,moller+crick:jce2018}. There
 is also a clear focus on identifying and adapting effective LT\&A
 approaches for key topics in computer science, such as mathematical
-foundations and
-programming~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,crick-et-al:fie2019,prickett-et-al:iticse2020}
+foundations, programming and cybersecurity~\cite{davenport-et-al:latice2016,murphy-et-al:programming2017,simon-et-al:sigcse2018,crick-et-al:fie2019,davenport+crick:fmfun2019,prickett-et-al:iticse2020,crick-et-al:fie2020}
 -- especially on applying appropriate pedagogic approaches -- as well
-as fostering interdisciplinarity. However, there are concerns of top-down, ``one size fits all'' institutional or national approaches that do not
-recognise the unique characteristics of LT\&A in computer science
-across the various settings and levels. Further work is required to
-identify and share best practice for some of these challenges,
-especially with regards to assessment, certification and qualifications.
+as fostering interdisciplinarity. However, there are concerns of
+top-down, ``one size fits all'' institutional or national approaches
+that do not recognise the unique characteristics of LT\&A in computer
+science across the various settings and levels. Further work is
+required to identify and share best practice for some of these
+challenges, especially with regards to assessment, certification and
+qualifications.
 % CAS/BCS:
 % https://www.bcs.org/content-hub/computing-teachers-save-the-day-during-covid-lockdown/
-
+% nadellaft:2020
 Moving from the specific computer science education and skills context
 to the wider IT industry and UK digital economy focus, it is clear there
 will be a huge demand for digital skills and
-infrastructure~\cite{tryfonas+crick:petra2018,davenport-et-al:educon2020,bcs:2020}.
+infrastructure~\cite{tryfonas+crick:petra2018,davenport-et-al:educon2020}.
 to support the UK's post-COVID economic
-renewal~\cite{dowdenspeech:2020,nadellaft:2020}. We have also seen the
+renewal~\cite{dowdenspeech:2020}. We have also seen the
 announcement of a review of academic accreditation of computer science
 degrees~\cite{crick-et-al:fie2019,crick-et-al-accred:cep2020} launched
 at the start of July, to ``ensure that computing graduates have the
 skills needed to drive economic recovery as data science and AI change
-the industry post COVID-19''~\cite{bcscsdegrev:2020}.
+the industry post
+COVID-19''\footnote{See:~\url{https://www.bcs.org/more/about-us/press-office/press-releases/review-of-academic-accreditation-of-computer-science-degrees-launched/}}
+%~\cite{bcscsdegrev:2020}.
 
+% \cite{bsasciecareers:2020}
 Finally, recent evidence suggests that young people are more
 interested in a scientific career as a result of
-COVID-19~\cite{bsasciecareers:2020}, alongside opportunities to
-promote interdisciplinarity in school science lessons when teaching
-about socio-scientific issues and issues intended to raise scientific
-literacy~\cite{reiss:2020}. Based on the data obtained from this rapid
-response survey of UK computer science practitioners, we anticipate
-continued evaluation and development of best practice for online LT\&A
-for computer science as we move into the 2020-2021 academic year and
-beyond, especially as it appears that the virus may have to be
-tolerated on an indefinite basis~\cite{kissler-et-al:2020}.
+COVID-19\footnote{See:~\url{https://www.britishscienceassociation.org/blog/young-people-are-more-interested-in-a-scientific-career-as-a-result-of-covid-19}},
+alongside opportunities to promote interdisciplinarity in school
+science lessons when teaching about socio-scientific issues and issues
+intended to raise scientific literacy~\cite{reiss:2020}. Based on the
+data obtained from this rapid response survey of UK computer science
+practitioners, we anticipate continued evaluation and development of
+best practice for online LT\&A for computer science as we move into
+the 2020-2021 academic year and beyond, especially as it appears that
+the virus may have to be tolerated on an indefinite
+basis~\cite{kissler-et-al:2020}.
+
+\newpage
 
 %%
 %% The acknowledgments section is defined using the "acks" environment
